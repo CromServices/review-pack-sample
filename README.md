@@ -28,7 +28,7 @@ This folder is not a client engagement. It shows the shape of a finished deliver
 Crom Services · Perth WA · Remote across Australia
 Trading as Crom Services
 
-Site: https://cromservices.com.au (placeholder)
+Site: https://cromservices.github.io/job-page-sample/packs/
 Contact: cromservices@gmail.com
 
 ## Run (optional)
