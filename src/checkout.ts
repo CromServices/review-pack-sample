@@ -40,7 +40,7 @@ export function calculateCheckout(input: CheckoutInput): CheckoutResult {
   let subtotal = 0;
 
   for (let i = 0; i < input.items.length; i++) {
-    const item = input.items[i];
+    const item = input.items[i]!;
     // Issue: no guard for qty <= 0 or missing unitPrice
     subtotal += item.unitPriceCents * item.qty;
   }

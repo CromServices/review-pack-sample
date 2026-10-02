@@ -1,41 +1,49 @@
-# Review pack sample — Crom Services
+# Review pack sample
 
-Public sample of how **Crom Services** delivers a code-review pack.
+Sample code-review delivery pack: a small TypeScript subject under review plus a finished `REVIEW.md` and a reusable template.
 
-This folder is not a client engagement. It shows the shape of a finished delivery: a small TypeScript subject under review, plus a structured REVIEW.md with verdict, findings graded block / should / nit, hours band, and billable note.
+<!-- Toolchain from CromServices/crom-ts-api-starter at b2cd23a (package.json "starter.config"): tsconfig*, .gitignore, LICENSE, npm scripts. This sample is not an API, so it takes no Express, Docker or Fly files. -->
 
-## What is inside
+## What it is
 
-- src/checkout.ts — deliberately imperfect checkout helpers
-- REVIEW.md — finished review pack (S band)
-- test/ — minimal smoke tests
-- package.json and tsconfig.json — TypeScript Node toolchain
+A public sample of how Crom Services delivers a code review. It is not a client engagement.
 
-## How Crom Services delivers reviews
+- `src/checkout.ts`: deliberately imperfect checkout helpers, the subject under review.
+- `REVIEW.md`: the finished review pack, with verdict, findings graded **block / should / nit**, hours band and billable note.
+- `templates/REVIEW.template.md`: the canonical findings format that every real review starts from.
+- `test/`: minimal `node:test` smoke tests for the subject.
 
-1. Scoped assignment
-2. Verdict
-3. Findings tagged block should nit
-4. Hours band S M L
-5. Billable note
+## What it proves
 
-## Capability
+- A review arrives as one structured document: a scoped assignment, a clear verdict, findings tagged by severity with where and how to fix, and an hours band (S / M / L) for the remediation.
+- Findings are concrete enough to act on (money math, input validation, side effects, silent defaults), not generic advice.
 
-- Code and PR review packs
-- Small builds and patches as PRs
-- API and webhook work
+## Live link
 
-Crom Services · Perth WA · Remote across Australia
-Trading as Crom Services
+Not hosted. The deliverable is [`REVIEW.md`](REVIEW.md) in this repo.
 
-Site: https://cromservices.github.io/job-page-sample/packs/
-Contact: cromservices@gmail.com
+## Run in 3 commands
 
-## Run (optional)
-Use the package manager to install, then run the project test script and typecheck.
-Requires Node 18 or newer.
+Needs Node 20 or newer.
 
-## License
+```bash
+npm install
+npm test
+npm run check      # strict typecheck
+```
 
-MIT — see LICENSE.
+`npm run build` compiles the subject to `dist/`.
 
+## Reuse for a new job
+
+1. Copy [`templates/REVIEW.template.md`](templates/REVIEW.template.md) into the delivery as `REVIEW.md`.
+2. Fill every `{{...}}`: subject, assignment, date, hours band, verdict, then one section per finding (block, then should, then nit).
+3. Delete the guidance comment at the top and check the public-face rules (no personal names, location "Australia" only).
+4. For a TypeScript subject that needs a runnable harness, start from [CromServices/crom-ts-api-starter](https://github.com/CromServices/crom-ts-api-starter) and set `starter.config.ref` to the starter commit.
+
+## Footer
+
+<!-- CROM THEME SLOT: replace with crom-shared README.template.md footer when live -->
+Built by [Crom Services, Australia](https://cromservices.com.au)
+
+MIT licence, see [LICENSE](LICENSE).

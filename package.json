@@ -1,21 +1,30 @@
 {
   "name": "crom-review-pack-sample",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Public sample of a Crom Services code-review delivery pack",
   "private": true,
   "type": "module",
+  "starter": {
+    "config": {
+      "name": "review-pack-sample",
+      "description": "Sample code-review delivery pack: a small TypeScript subject under review plus a finished REVIEW.md and a reusable template.",
+      "liveUrl": "",
+      "source": "CromServices/crom-ts-api-starter",
+      "ref": "b2cd23a"
+    }
+  },
   "scripts": {
-    "build": "tsc --noEmit",
-    "test": "node --import tsx --test test/*.test.ts",
-    "check": "tsc --noEmit"
+    "build": "tsc -p tsconfig.build.json",
+    "check": "tsc --noEmit",
+    "test": "node --import tsx --test test/*.test.ts"
   },
   "devDependencies": {
-    "@types/node": "^20.11.0",
-    "tsx": "^4.7.0",
-    "typescript": "^5.3.3"
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
   },
   "license": "MIT",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   }
 }
