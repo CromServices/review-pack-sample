@@ -1,10 +1,10 @@
-# Review pack — checkout helpers (sample)
+# Review pack — checkout helpers
 
-**Client / assignment:** Public portfolio sample (fictional cart checkout module)
+**Client / assignment:** Fictional business (cart checkout module)
 **Reviewer:** Crom Services
 **Date:** 2026-09-07
 **Hours band:** S
-**Billable note:** Sample only — not a live engagement. Illustrates a finished S-band review pack.
+**Billable note:** Fictional business; not a paid engagement. Illustrates a finished S-band review pack.
 
 ---
 
@@ -59,7 +59,7 @@ The success path writes back into the module-level `DISCOUNTS` object. Unnecessa
 
 ### should — Silent currency default to `"USD"`
 
-`input.currency || "USD"` hides missing currency on an AU-facing sample. Prefer requiring `currency` (already on the type) and dropping the fallback, or defaulting to `"AUD"` if product policy says so — but document it.
+`input.currency || "USD"` hides missing currency on an AU-facing checkout. Prefer requiring `currency` (already on the type) and dropping the fallback, or defaulting to `"AUD"` if product policy says so — but document it.
 
 ---
 

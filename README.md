@@ -1,12 +1,12 @@
-# Review pack sample
+# Code review pack: checkout module
 
-Sample code-review delivery pack: a small TypeScript subject under review plus a finished `REVIEW.md` and a reusable template.
+Code review pack for a fictional business's checkout module: a small TypeScript subject under review plus a finished `REVIEW.md` and a reusable template.
 
 <!-- Toolchain from CromServices/crom-ts-api-starter at b2cd23a (package.json "starter.config"): tsconfig*, .gitignore, LICENSE, npm scripts. This sample is not an API, so it takes no Express, Docker or Fly files. -->
 
 ## What it is
 
-A public sample of how Crom Services delivers a code review. It is not a client engagement.
+Shows how Crom Services delivers a code review. Fictional business; not a paid engagement.
 
 - `src/checkout.ts`: deliberately imperfect checkout helpers, the subject under review.
 - `REVIEW.md`: the finished review pack, with verdict, findings graded **block / should / nit**, hours band and billable note.
