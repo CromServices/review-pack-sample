@@ -1,13 +1,13 @@
 {
   "name": "crom-review-pack-sample",
   "version": "2.0.0",
-  "description": "Public sample of a Crom Services code-review delivery pack",
+  "description": "Code review pack for a fictional business's checkout module. Fictional business; not a paid engagement.",
   "private": true,
   "type": "module",
   "starter": {
     "config": {
       "name": "review-pack-sample",
-      "description": "Sample code-review delivery pack: a small TypeScript subject under review plus a finished REVIEW.md and a reusable template.",
+      "description": "Code review pack for a fictional business's checkout module: a small TypeScript subject under review plus a finished REVIEW.md and a reusable template.",
       "liveUrl": "",
       "source": "CromServices/crom-ts-api-starter",
       "ref": "b2cd23a"

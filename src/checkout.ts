@@ -1,6 +1,6 @@
 /**
  * Deliberately imperfect checkout helpers — used as the subject of REVIEW.md.
- * This is sample code only; not production.
+ * Code review pack for a fictional business's checkout module; not production.
  */
 
 export type CartItem = {
